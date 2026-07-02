@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.johnzhang-ui/shotflow-mcp",
+  "description": "ShotFlow MCP Server — AI分镜脚本与视频生成智能体，支持生成专业分镜、视频、镜头重生成、配额查询等能力。",
+  "repository": {
+    "url": "https://github.com/JOHNZhang-ui/shotflow-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "shotflow-mcp-server",
+      "version": "1.0.0",
+      "transport": {
+        "type": "http",
+        "url": "https://aishotflow.cn/mcp"
+      },
+      "environmentVariables": [
+        {
+          "name": "SHOTFLOW_API_URL",
+          "description": "ShotFlow Express API 地址",
+          "isRequired": false,
+          "format": "url",
+          "default": "http://localhost:3003"
+        },
+        {
+          "name": "MCP_API_KEY",
+          "description": "MCP Server 认证 Key（可选）",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,17 @@
 {
   "name": "shotflow-mcp-server",
   "version": "1.0.0",
-  "description": "ShotFlow MCP Server — AI分镜脚本与视频生成智能体，遵循 MCP (Model Context Protocol) 1.0 规范",
+  "description": "ShotFlow MCP Server — AI分镜脚本与视频生成智能体，遵循 MCP (Model Context Protocol) 规范。支持生成专业分镜、视频、镜头重生成、配额查询等能力。",
+  "mcpName": "io.github.johnzhang-ui/shotflow-mcp",
   "main": "shotflow-mcp-server.js",
+  "homepage": "https://aishotflow.cn/mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JOHNZhang-ui/shotflow-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JOHNZhang-ui/shotflow-mcp/issues"
+  },
   "scripts": {
     "start": "node shotflow-mcp-server.js",
     "test": "node test/test-mcp.js"
@@ -12,13 +21,14 @@
     "model-context-protocol",
     "shotflow",
     "storyboard",
-    "ai",
-    "video",
-    "agent",
+    "ai-video",
+    "video-generation",
+    "photography",
+    "ai-agent",
     "claude",
     "deepseek"
   ],
-  "author": "ShotFlow",
+  "author": "JOHNZhang-ui <https://github.com/JOHNZhang-ui>",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
