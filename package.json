@@ -1,0 +1,26 @@
+{
+  "name": "shotflow-mcp-server",
+  "version": "1.0.0",
+  "description": "ShotFlow MCP Server — AI分镜脚本与视频生成智能体，遵循 MCP (Model Context Protocol) 1.0 规范",
+  "main": "shotflow-mcp-server.js",
+  "scripts": {
+    "start": "node shotflow-mcp-server.js",
+    "test": "node test/test-mcp.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "shotflow",
+    "storyboard",
+    "ai",
+    "video",
+    "agent",
+    "claude",
+    "deepseek"
+  ],
+  "author": "ShotFlow",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
